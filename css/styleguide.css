@@ -1,16 +1,100 @@
 :root {
-    --primary: #BD8E83;
+    --primary: #946251;
     --secondary: #E9DAC4;
-    --accent: #749EB2;
+    --accent: #2a5366;
     --gray-dark: #333;
-    --gray-dight: #ededed;
-    --gray-lightest: #f2eee6;
+    --gray-light: #ededed;
+    --gray-white: #fff;
+    --gray-black: #000;
+    --gray-lightest: #f0eae4;
 
 }
 
-.button {
+a {
+    text-decoration: none;
+}
+
+#logo{
+    font-size: 32px;
+    line-height: 40px;
+    font-family: 'DM Serif Display', serif;
     color: var(--gray-dark);
+}
+
+body {
+    background-color: var(--gray-lightest);
+}
+
+.container {
+    Max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    display: flex;
+}
+
+.primary-button {
+    color: var(--gray-white);
     background-color: var(--primary);
-    padding: 16px 24px;
+    padding: 12px 16px;
     border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.primary-link {
+    color: var(--primary);
+    padding: 12px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 64px;
+    line-height: 72px;
+    font-weight: 300;
+    color: var(--gray-dark);
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 300;
+    color: var(--gray-dark);
+}
+
+h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 300;
+    color: var(--accent);
+}
+
+h4 {
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--gray-dark);
+}
+
+p {
+    font-family: 'Open Sans', serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--gray-dark);
 }
