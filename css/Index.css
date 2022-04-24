@@ -1,8 +1,16 @@
 @import "./styleguide.css";
 
+
+.split {
+    display: grid;
+    grid-template: 100% / 10fr 2fr;
+    grid-gap: 32px;
+}
+
+
 .blog-cards {
     display: grid;
-    grid-template: auto/50% 50%;
+    grid-template: auto / repeat(1fr 12);
     grid-gap: 32px;
 }
 
@@ -38,4 +46,10 @@
 .blog-info {
     display: flex;
     flex-direction: row;
+}
+
+.tag-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
