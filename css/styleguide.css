@@ -3,14 +3,18 @@
     --secondary: #E9DAC4;
     --accent: #2a5366;
     --gray-dark: #333;
+    --gray: #666;
     --gray-light: #ededed;
     --gray-white: #fff;
-    --gray-black: #000;
-    --gray-lightest: #f0eae4;
+    --gray-lightest: #f2eee6;
 
 }
 
-a {
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
     text-decoration: none;
 }
 
@@ -35,16 +39,19 @@ body {
 }
 
 .primary-button {
-    color: var(--gray-white);
+    display: flex;
+}
+
+.primary-button-text {
     background-color: var(--primary);
-    padding: 12px 16px;
-    border-radius: 5px;
-    text-decoration: none;
+    color: white;
     font-family: 'Open Sans', serif;
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding: 12px 16px;
+    border-radius: 5px;
 }
 
 .primary-link {
@@ -54,7 +61,7 @@ body {
     text-decoration: none;
     font-family: 'Open Sans', serif;
     font-size: 14px;
-    line-height: 14px;
+    line-height: 42px;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -88,7 +95,8 @@ h4 {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
-    color: var(--gray-dark);
+    color: var(--gray);
+    
 }
 
 p {
