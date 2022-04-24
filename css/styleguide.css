@@ -129,3 +129,11 @@ p {
     line-height: 12px;
     margin: 0 8px 8px 0;
 }
+
+.copyright-text {
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: var(--gray-dark);
+}
