@@ -1,0 +1,16 @@
+:root {
+    --primary: #BD8E83;
+    --secondary: #E9DAC4;
+    --accent: #749EB2;
+    --gray-dark: #333;
+    --gray-dight: #ededed;
+    --gray-lightest: #f2eee6;
+
+}
+
+.button {
+    color: var(--gray-dark);
+    background-color: var(--primary);
+    padding: 16px 24px;
+    border-radius: 5px;
+}
