@@ -1,7 +1,7 @@
 @import "./styleguide.css";
 
 
-.split {
+.grid-set-up {
     display: grid;
     grid-template: auto / 10fr 2fr;
     grid-gap: 32px;
