@@ -27,7 +27,7 @@ a:active {
     font-size: 32px;
     line-height: 40px;
     font-family: 'DM Serif Display', serif;
-    color: var(--gray-dark);
+    color: var(--secondary);
 }
 
 .container {
