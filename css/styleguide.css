@@ -43,6 +43,7 @@ a:active {
 
 .primary-button {
     display: flex;
+    margin-top: 24px;
 }
 
 .primary-button-text {
@@ -52,7 +53,7 @@ a:active {
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 12px 16px;
     border-radius: 5px;
 }
@@ -66,7 +67,7 @@ a:active {
     font-size: 14px;
     line-height: 42px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 h1 {
