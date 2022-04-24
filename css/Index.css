@@ -43,13 +43,14 @@
     max-width: 50%;
 }
 
-.blog-info {
-    display: flex;
-    flex-direction: row;
-}
+/* .author-name::after {
+    content: "·";
+    margin: 0px 8px;
+} */
 
 .tag-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 8px;
 }
