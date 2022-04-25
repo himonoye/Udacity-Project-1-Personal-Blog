@@ -20,6 +20,7 @@ body {
 p {
     margin: 0 0 24px 0;
     padding: 0;
+    color: var(--gray-dark)
 }
 
 a,
@@ -31,6 +32,11 @@ a:active {
     color:var(--secondary)
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 .container {
     Max-width: 1400px;
     margin-left: auto;
@@ -40,6 +46,7 @@ a:active {
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
+    flex-direction: column;
 }
 
 .primary-button-wrapper {
@@ -81,7 +88,7 @@ a:active {
     line-height: 48px;
     font-weight: 300;
     color: var(--gray-dark);
-    margin: 0 0 8px 0;
+    margin: 0 0 16px 0;
 }
 
 .head {
@@ -107,7 +114,7 @@ a:active {
     font-size: 18px;
     line-height: 22px;
     font-weight: 600;
-    color: var(--gray-dark);
+    color: var(--gray);
     margin: 0 0 16px 0;
     
 }
@@ -122,12 +129,22 @@ a:active {
     
 }
 
+.font-larger {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--gray-dark);
+    max-width: 900px
+}
+
 .font-base {
     font-family: 'Quicksand', sans-serif;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
     color: var(--gray-dark);
+    max-width: 600px
 }
 
 .font-small {
@@ -136,6 +153,7 @@ a:active {
     line-height: 22px;
     font-weight: 400;
     color: var(--gray-dark);
+    max-width: 1200px
 }
 
 .tag {
@@ -143,12 +161,12 @@ a:active {
     background-color: var(--accent);
     border: var(--gray-light) solid 1px;
     border-radius: 50px;
-    padding: 8px 16px;
     font-family: 'Quicksand', sans-serif;
     font-size: 12px;
     line-height: 12px;
     font-weight: 600;
     margin: 0 8px 8px 0;
+    padding: 8px 16px;
 }
 
 .tag:hover {

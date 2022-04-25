@@ -1,3 +1,31 @@
-body {
-    background-color: #f1f1f1;
+.blog-content {
+    padding:56px 88px;
+    background-color: white;
+    border-radius: 10px;
+    grid-column: 1 / 10;
+}
+
+.blog-headings {
+    margin: 0 0 24px 0;
+}
+
+.blog-hero-image {
+    margin: 24px 0;
+    height: auto;
+}
+
+.blog-quote{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 24px;
+    color: var(--gray);
+    line-height: 32px;
+    padding: 24px 40px;
+    border-left: var(--secondary) solid 2px;
+    max-width: 600px
+}
+
+.blog-quotation-mark {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 32px;
+    line-height: 32px;
 }
