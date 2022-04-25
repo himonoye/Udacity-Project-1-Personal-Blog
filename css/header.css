@@ -2,18 +2,18 @@
     Max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 56px;
-    padding-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 0px;
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 .header-container .primary-button {
-    margin-top: 0;
+    display: none;
 }
 
 .header-container .head {
@@ -27,4 +27,64 @@
 
 .header-button-wrapper ,.primary-button{
     margin: 0 0 0 16px;
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .header-container {
+        padding-top: 24px;
+        padding-bottom: 0px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+    }
+
+    .header-container .primary-button {
+        display: flex;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .header-container {
+        padding-top: 24px;
+        padding-bottom: 0px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+    }
+
+    .header-container .primary-button {
+        display: flex;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .header-container {
+        padding-top: 40px;
+        padding-bottom: 8px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+    }
+
+    .header-container .primary-button {
+        display: flex;
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-container {
+        padding-top: 56px;
+        padding-bottom: 24px;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        justify-content: space-between;
+    }
+
+    .header-container .primary-button {
+        display: flex;
+        margin-top: 0;
+    }
 }

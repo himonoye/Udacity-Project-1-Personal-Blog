@@ -1,8 +1,10 @@
+
 .blog-content {
-    padding:56px 88px;
+    display: flex;
+    flex-direction: column;
+    padding:32px;
     background-color: white;
     border-radius: 10px;
-    grid-column: 1 / 10;
 }
 
 .blog-headings {
@@ -15,11 +17,11 @@
 }
 
 .blog-quote{
-    color: var(--gray);
     font-family: 'Quicksand', sans-serif;
-    font-size: 24px;
-    line-height: 32px;
-    padding: 24px 40px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px 24px;
+    color: var(--gray);
     border-left: var(--secondary) solid 2px;
     max-width: 600px
 }
@@ -30,14 +32,48 @@
     line-height: 32px;
 }
 
-@media screen and (max-width: 600px) {
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .blog-quote{
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
     .blog-content {
-        padding:32px;
+        padding:56px 88px;
     }
 
     .blog-quote{
-        font-size: 16px;
-        line-height: 24px;
-        padding: 16px 24px;
+        font-size: 20px;
+        line-height: 28px;
     }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .blog-content {
+        grid-column: 1 / 10;
+        padding:56px 88px;
+    }
+
+    .blog-quote{
+        font-size: 20px;
+        line-height: 28px;
+    }  
+}
+
+@media screen and (min-width: 1200px) {
+
+    .blog-content {
+        grid-column: 1 / 10;
+        padding:56px 88px;
+    }
+    
+    .blog-quote{
+        font-size: 24px;
+        line-height: 32px;
+        padding: 24px 40px;
+    }
+
 }

@@ -31,6 +31,10 @@
         grid-template: auto / repeat(2, 1fr);
         grid-gap: 16px;
     }
+
+    .side-bar {
+        padding:32px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -39,6 +43,10 @@
         grid-column: 1 / 10;
         grid-template: auto / repeat(3, 1fr);
         grid-gap: 16px;
+    }
+
+    .side-bar {
+        padding:56px 88px;
     }
 }
 
@@ -61,7 +69,6 @@
     }
 }
 
-/* need to work on */
 @media screen and (min-width: 1200px) {
     .layout-set-up {
         display: grid;

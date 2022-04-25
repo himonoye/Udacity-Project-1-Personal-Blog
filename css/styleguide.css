@@ -180,13 +180,13 @@ img {
 
 @media screen and (max-width: 1024px) {
     .lead {
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 24px;
+        line-height: 32px;
     }
     
     .head {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 22px;
+        line-height: 28px;
     }
     
     .sub {
