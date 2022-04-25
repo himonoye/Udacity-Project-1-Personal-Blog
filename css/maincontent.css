@@ -4,9 +4,21 @@
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
+    box-shadow: 2px 2px 5px 0 rgb(0,0,0,.05);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: .5s;
+}
+
+.blog-card:hover {
+    margin-top: -2px;
+    margin-bottom: 2px;
+    box-shadow: 2px 2px 15px 0 rgb(0,0,0,.05);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: .5s;
 }
 
 .blog-card-image {
+    display: none;
     max-width: 100%;
     height: auto;
 }
@@ -22,7 +34,7 @@
 
 .blog-content-wrapper {
     flex-direction: column;
-    padding: 32px;
+    padding: 24px;
 }
 
 .blog-tag-wrapper {
@@ -33,12 +45,32 @@
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
+    .blog-card-image {
+        display: block;
+    }
+
     .blog-headline{
         grid-area: 1/1/1/3;
+    }
+
+    .blog-card-image-headline {
+        display: block;
+        background-image: url("../img/blog-image-1.jpg");
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+    }
+
+    .blog-content-wrapper {
+        padding: 32px;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    .blog-card-image {
+        display: block;
+    }
+
     .blog-headline{
         flex-direction: row;
         grid-area: 1/1/1/4;
@@ -47,12 +79,21 @@
 
     .blog-card-image-headline {
         display: block;
-        max-width: 50%;
-        height: auto;
+        background-image: url("../img/blog-image-1.jpg");
+        background-size: cover;
+        width: 50%;
+        height: 100%;
+    }
+
+    .blog-content-wrapper {
+        padding: 32px;
     }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+    .blog-card-image {
+        display: block;
+    }
 
     .blog-headline{
         flex-direction: row;
@@ -61,15 +102,23 @@
     }
 
     .blog-card-image-headline {
-        display: flex;
+        display: block;
+        background-image: url("../img/blog-image-1.jpg");
+        background-size: cover;
         max-width: 50%;
         height: auto;
     }
     
+    .blog-content-wrapper {
+        padding: 32px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-
+    .blog-card-image {
+        display: block;
+    }
+    
     .blog-headline{
         flex-direction: row;
         grid-area: 1/1/1/4;
@@ -77,9 +126,14 @@
     }
 
     .blog-card-image-headline {
-        display: flex;
-        max-width: 50%;
-        height: auto;
+        display: block;
+        background-image: url("../img/blog-image-1.jpg");
+        background-size: cover;
+        width: 50%;
+        height: 100%;
     }
 
+    .blog-content-wrapper {
+        padding: 32px;
+    }
 }
