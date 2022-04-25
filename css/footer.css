@@ -2,8 +2,8 @@
     Max-width: 1400px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 24px;
+    padding-bottom: 56px;
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
@@ -12,24 +12,31 @@
     align-items: center;
 }
 
-.footer-container .primary-button {
-    margin-top: 0;
-}
-
 .social-link-wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.social-link-wrapper h3{
+.social-link-wrapper .sub{
     margin-bottom: 0;
 }
 
 .social-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--accent);
+    border: var(--gray-light) solid 1px;
+    border-radius: 50px;
+    padding: 8px;
     margin-left: 16px;
 }
 
+.social-link:hover {
+    border: var(--secondary) solid 1px;
+}
+
 .social-link-icon {
-    width: 24px;
+    width: 16px;
 }
