@@ -2,85 +2,48 @@
 @import "./header.css";
 @import "./footer.css";
 @import "./Blog.css";
+@import "./maincontent.css";
+@import "./sidebar.css";
 
 .layout-set-up {
-    display: grid;
-    grid-template: auto / repeat(12, 1fr);
-    grid-gap: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
 }
 
-
 .main-content {
-    grid-column: 1 / 10;
-    display: grid;
-    grid-template: auto / repeat(3, 1fr);
-    grid-gap: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px
 }
 
 .side-bar {
-    grid-column: 10 / 13;
     display: flex;
     flex-direction: column;
     padding:24px;
     background-color: rgb(255,255,255,.3);
-    align-content: flex-start;
     border-radius: 10px;
-
 }
 
-.blog-card {
-    background-color: white;
-    display: Flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .main-content {
+        display: grid;
+        grid-template: auto / repeat(2, 1fr);
+        grid-gap: 16px;
+    }
 }
 
-.blog-headline{
-    background-color: white;
-    display: Flex;
-    flex-direction: row;
-    grid-area: 1/1/1/4;
-    align-items: center;
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    .main-content {
+        grid-column: 1 / 10;
+        display: grid;
+        grid-template: auto / repeat(3, 1fr);
+        grid-gap: 16px;
+    }
 }
 
-.blog-content-wrapper {
-    padding: 32px;
-    display: Flex;
-    flex-direction: column;
-}
-
-.blog-card-image {
-    max-width: 100%;
-    height: auto;
-}
-
-.blog-card-image-headline {
-    max-width: 50%;
-    height: auto;
-}
-
-.blog-tag-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 0 0 8px 0;
-}
-
-.author-bio {
-    font-size: 14px;
-    line-height: 18px;
-}
-
-.profile-image {
-    border-radius: 200px;
-    width: 100px;
-    height: auto;
-    border: rgb(255,255,255,.5) solid 10px;
-    margin: 0 0 16px 0;
-}
-
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     .layout-set-up {
         display: grid;
         grid-template: auto / repeat(8, 1fr);
@@ -96,91 +59,31 @@
     
     .side-bar {
         grid-column: 7 / 9;
-    
-    }
-
-    .blog-headline{
-        grid-area: 1/1/1/3;
     }
 }
 
-@media screen and (max-width: 992px) {
+/* need to work on */
+@media screen and (min-width: 1200px) {
     .layout-set-up {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template: auto / repeat(12, 1fr);
+        grid-gap: 32px;
     }
-    
+
+
     .main-content {
-        display: flex;
-        flex-direction: column;
+        grid-column: 1 / 10;
+        display: grid;
+        grid-template: auto / repeat(3, 1fr);
+        grid-gap: 32px;
     }
-    
+
     .side-bar {
+        grid-column: 10 / 13;
         display: flex;
         flex-direction: column;
-    }
+        align-content: flex-start;
 
-    .blog-card {
-        display: Flex;
-        flex-direction: row;
-    }
-
-    .blog-card-image {
-        max-width: 50%;
-        height: auto;
-    }
-
-    .blog-headline{
-        background-color: white;
-        display: Flex;
-        flex-direction: row;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    
-    .blog-card-image-headline {
-        max-width: 50%;
-        height: auto;
     }
 }
 
-@media screen and (max-width: 768px) {
-    .layout-set-up {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .main-content {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .side-bar {
-        display: flex;
-        flex-direction: column;
-    }
-
-
-    .blog-card {
-        display: Flex;
-        flex-direction: column;
-    }
-
-    .blog-card-image {
-        max-width: 100%;
-        height: auto;
-    }
-
-    .blog-headline{
-        background-color: white;
-        display: Flex;
-        flex-direction: column;
-        border-radius: 10px;
-        overflow: hidden;
-    }
-    
-    .blog-card-image-headline {
-        max-width: 100%;
-        height: auto;
-    }
-}
