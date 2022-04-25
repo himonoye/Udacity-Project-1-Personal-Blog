@@ -153,7 +153,7 @@ img {
     line-height: 22px;
     font-weight: 400;
     color: var(--gray-dark);
-    max-width: 1200px
+    max-width: 400px
 }
 
 .tag {
@@ -176,4 +176,32 @@ img {
 .divider {
     border-top: 1px solid var(--gray-light);
     margin: 32px 0 32px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .lead {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    
+    .head {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .sub {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+    .flag {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    
+    .brow {
+        font-size: 14px;
+        line-height: 21px;
+        
+    }
 }
