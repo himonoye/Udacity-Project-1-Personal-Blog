@@ -16,3 +16,11 @@
     margin-top: 0;
 }
 
+.header-button-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.header-button-wrapper ,.primary-button{
+    margin: 0 0 0 16px;
+}
