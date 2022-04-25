@@ -45,14 +45,20 @@
     max-width: 50%;
 }
 
-/* .author-name::after {
-    content: "·";
-    margin: 0px 8px;
-} */
-
 .blog-tag-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 8px;
+}
+
+.author-bio {
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.profile-image {
+    border-radius: 200px;
+    width: 100px;
+    border: rgb(255,255,255,.5) solid 10px;
 }

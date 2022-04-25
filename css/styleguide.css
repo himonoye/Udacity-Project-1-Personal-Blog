@@ -101,19 +101,38 @@ h3 {
 }
 
 h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: var(--secondary);
+    margin: 0 0 8px 0;
+    
+}
+
+h5 {
     font-family: 'Open Sans', serif;
     font-size: 14px;
-    line-height: 24px;
+    line-height: 21px;
     font-weight: 400;
     color: var(--gray);
     margin: 0 0 8px 0;
     
 }
 
-p {
+.font-base {
     font-family: 'Open Sans', serif;
     font-size: 16px;
     line-height: 24px;
+    font-weight: 400;
+    color: var(--gray-dark);
+    margin: 0 0 24px 0;
+}
+
+.font-small {
+    font-family: 'Open Sans', serif;
+    font-size: 14px;
+    line-height: 22px;
     font-weight: 400;
     color: var(--gray-dark);
     margin: 0 0 24px 0;
