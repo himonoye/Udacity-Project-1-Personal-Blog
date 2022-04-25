@@ -55,7 +55,12 @@
 .author-bio {
     font-size: 14px;
     line-height: 18px;
+    padding:24px;
+    background-color: rgb(255,255,255,.2);
+    border-radius: 10px;
+    margin-bottom: 32px;
 }
+
 
 .profile-image {
     border-radius: 200px;
