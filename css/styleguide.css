@@ -4,7 +4,8 @@
     --accent: #f2f6f7;
     --gray-dark: #444;
     --gray: #666;
-    --gray-light: #ededed;
+    --gray-light: #ddd;
+    --gray-lighter: #ededed;
     --gray-white: #fff;
     --gray-lightest: #f2eee6;
 
@@ -13,8 +14,13 @@
 
 body {
     background-color: var(--gray-lightest);
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+    padding: 0;
 }
 
 a,
@@ -116,7 +122,6 @@ a:active {
     line-height: 24px;
     font-weight: 400;
     color: var(--gray-dark);
-    margin: 0 0 24px 0;
 }
 
 .font-small {
@@ -124,7 +129,6 @@ a:active {
     line-height: 22px;
     font-weight: 400;
     color: var(--gray-dark);
-    margin: 0 0 24px 0;
 }
 
 .tag {
@@ -144,4 +148,9 @@ a:active {
     line-height: 18px;
     font-weight: 400;
     color: var(--gray-dark);
+}
+
+.divider {
+    border-top: 1px solid var(--gray-light);
+    margin: 32px 0 32px 0;
 }
