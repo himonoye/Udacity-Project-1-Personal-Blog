@@ -1,10 +1,11 @@
 @import "./styleguide.css";
 @import "./header.css";
 @import "./footer.css";
-@import "./Blog.css";
-@import "./maincontent.css";
-@import "./sidebar.css";
-@import "./signup.css";
+@import "./blog.css";
+@import "./main-content.css";
+@import "./side-bar.css";
+@import "./sign-up.css";
+
 
 .layout-set-up {
     display: flex;
@@ -12,11 +13,13 @@
     gap: 16px
 }
 
+
 .main-content {
     display: flex;
     flex-direction: column;
     gap: 16px
 }
+
 
 .side-bar {
     display: flex;
@@ -26,7 +29,9 @@
     border-radius: 10px;
 }
 
+
 @media screen and (min-width: 600px) and (max-width: 768px) {
+
     .main-content {
         display: grid;
         grid-template: auto / repeat(2, 1fr);
@@ -36,26 +41,33 @@
     .side-bar {
         padding:56px 88px;
     }
+
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
     .main-content {
         display: grid;
         grid-template: auto / repeat(3, 1fr);
         grid-gap: 16px;
     }
 
+
     .side-bar {
         padding:56px 88px;
     }
 }
 
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
+
     .layout-set-up {
         display: grid;
         grid-template: auto / repeat(12, 1fr);
         grid-gap: 16px;
     }
+
 
     .main-content {
         grid-column: 1 / 10;
@@ -64,17 +76,22 @@
         grid-gap: 16px;
     }
 
+
     .side-bar {
         grid-column: 10 / 13;
     }
+
 }
 
+
 @media screen and (min-width: 1200px) {
+
     .layout-set-up {
         display: grid;
         grid-template: auto / repeat(12, 1fr);
         grid-gap: 32px;
     }
+
 
     .main-content {
         grid-column: 1 / 10;
@@ -83,8 +100,10 @@
         grid-gap: 32px;
     }
 
+
     .side-bar {
         grid-column: 10 / 13;
     }
+
 }
 
