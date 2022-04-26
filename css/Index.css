@@ -4,6 +4,7 @@
 @import "./Blog.css";
 @import "./maincontent.css";
 @import "./sidebar.css";
+@import "./signup.css";
 
 .layout-set-up {
     display: flex;
@@ -40,7 +41,6 @@
 @media screen and (min-width: 768px) and (max-width: 992px) {
     .main-content {
         display: grid;
-        grid-column: 1 / 10;
         grid-template: auto / repeat(3, 1fr);
         grid-gap: 16px;
     }
@@ -75,7 +75,6 @@
         grid-template: auto / repeat(12, 1fr);
         grid-gap: 32px;
     }
-
 
     .main-content {
         grid-column: 1 / 10;
