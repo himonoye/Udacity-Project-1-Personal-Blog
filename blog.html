@@ -12,13 +12,16 @@
     </head>
     <body>
          <!-- Header -->
-         <Header class="header-container">
+        <Header class="header-container container">
             <h1 class="head">
                 <a href="index.html">Learning Designs with Mingaling</a>
             </h1>
-            <div class="header-button-wrapper">
-                <div class="primary-button-wrapper">
-                    <a href="blog.html" class="primary-button">Subscribe</a>
+            <div class="signup-wrapper">
+                <div class="signup-input-field">
+                    <input class="input-field" placeholder="Email Address"  type="email" aria-label="Email input field">
+                    <div class="button-wrapper">
+                        <input class="primary-button" type="button" value="Subscribe" aria-label="Subscribe to news letter">
+                    </div>
                 </div>
             </div>
         </Header>
@@ -28,7 +31,7 @@
             <div class="blog-content">
                 <div class="blog-headings">
                     <div class="brow">April 14, 2022</div>
-                    <h1 class="lead">How to Design with Developers in Mind</h1>
+                    <h1 class="head">How to Design with Developers in Mind</h1>
                     <h2 class="flag">Four ways designers can make a developer’s life easier.</h2>
                 </div>
                 <p class="font-base">This posting expresses the views and opinions of the authors and does not necessarily reflect the views of Yext and its affiliates, employees, officers, directors, or representatives.</p>
@@ -107,7 +110,7 @@
     </div>
     
     <!-- Footer -->
-    <footer class="footer-container">
+    <footer class="footer-container container">
         <div class="social-link-wrapper">
             <h2 class="sub">Follow me</h2>
             <a class="social-link" href="">
@@ -117,7 +120,14 @@
                 <img src="./img/linkedin.svg" class="social-link-icon" alt="LinkedIn">
             </a>
         </div>
-        <div class="font-small">Made with ♥ @2022 Mingaling</div>
+        <div class="signup-wrapper">
+            <h2 class="flag">Subscribe to my newsletter</h2>
+            <div class="signup-input-field">
+                <input class="input-field" placeholder="Email Address"  type="email" aria-label="Email input field">
+                <div class="button-wrapper">
+                    <input class="primary-button" type="button" value="Subscribe" placeholder="Email Address" aria-label="Subscribe to news letter">
+                </div>
+            </div>
+        </div>
     </footer>
-    </body>
 </html>
