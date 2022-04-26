@@ -1,10 +1,10 @@
-@import 'style-guide.css';
-@import 'header.css';
-@import 'footer.css';
-@import 'blog.css';
-@import 'main-content.css';
-@import 'side-bar.css';
-@import 'sign-up.css';
+@import './style-guide.css';
+@import './header.css';
+@import './footer.css';
+@import './blog.css';
+@import './main-content.css';
+@import './side-bar.css';
+@import './sign-up.css';
 
 
 .layout-set-up {
