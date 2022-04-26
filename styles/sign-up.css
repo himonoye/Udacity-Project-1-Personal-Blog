@@ -4,11 +4,13 @@
     justify-content: center;
 }
 
+
 .signup-input-field {
     min-width: 200px;
     display: flex;
     flex-direction: column;
 }
+
 
 .input-field {
     background-color: white;
@@ -17,16 +19,20 @@
     margin: 0 0 8px 0;
 }
 
+
 .signup-wrapper .flag {
     color: white;
 }
 
+
 @media screen and (min-width: 600px) and (max-width: 768px) {
+
     .signup-wrapper {
         flex-direction: column;
         align-items: center;
     }
 
+
     .signup-input-field {
         width: 400px;
         flex-direction: row;
@@ -34,23 +40,29 @@
         align-items: stretch;
     }
 
+
     .input-field {
         flex-grow: 1;
         border-radius: 50px 0 0 50px;
         margin: 0px;
     }
     
-    .signup-wrapper .primary-button{
+
+    .signup-wrapper .primary-button {
         border-radius: 0 50px 50px 0;
     }
+
 }
 
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
+
     .signup-wrapper {
         flex-direction: row;
         align-items: center;
     }
 
+
     .signup-input-field {
         width: 400px;
         flex-direction: row;
@@ -58,20 +70,25 @@
         align-items: stretch;
     }
 
+
     .input-field {
         flex-grow: 1;
         border-radius: 50px 0 0 50px;
         margin: 0px;
     }
     
+
     .signup-wrapper .flag {
         margin: 0 16px 0 0;
     }
 
+
     .signup-wrapper .primary-button{
         border-radius: 0 50px 50px 0;
     }
+
 }
+
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .signup-wrapper {
@@ -79,6 +96,7 @@
         align-items: center;
     }
 
+
     .signup-input-field {
         width: 400px;
         flex-direction: row;
@@ -86,28 +104,35 @@
         align-items: stretch;
     }
 
+
     .input-field {
         flex-grow: 1;
         border-radius: 50px 0 0 50px;
         margin: 0px;
     }
     
+
     .signup-wrapper .flag {
         margin: 0 16px 0 0;
         color: white;
     }
 
-    .signup-wrapper .primary-button,.primary-inverse-button{
+
+    .signup-wrapper .primary-button,.primary-inverse-button {
         border-radius: 0 50px 50px 0;
     }
+
 }
 
+
 @media screen and (min-width: 1200px) {
+
     .signup-wrapper {
         flex-direction: row;
         align-items: center;
     }
 
+
     .signup-input-field {
         width: 400px;
         flex-direction: row;
@@ -115,18 +140,22 @@
         align-items: stretch;
     }
 
+
     .input-field {
         flex-grow: 1;
         border-radius: 50px 0 0 50px;
         margin: 0px;
     }
 
+
     .signup-wrapper .flag {
         margin: 0 16px 0 0;
         color: white;
     }
     
-    .signup-wrapper .primary-button, .primary-inverse-button{
+
+    .signup-wrapper .primary-button, .primary-inverse-button {
         border-radius: 0 50px 50px 0;
     }
+
 }
