@@ -21,6 +21,7 @@
     font-size: 16px;
     line-height: 24px;
     padding: 16px 24px;
+    margin: 24px 0px;
     color: var(--gray);
     border-left: var(--secondary) solid 2px;
     max-width: 600px
